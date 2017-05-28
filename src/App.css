@@ -1,24 +1,93 @@
-.App {
-  text-align: center;
+.App{
+    height: 100vh;
+    position: relative;
+    background-color: #2e3134;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.thead {
+    background-color: #3c7026;
+    color: white;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #15191c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    color: #353f47;
 }
 
-.App-intro {
-  font-size: large;
+.powered{
+    border-color: #353f47;
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+    padding: 15px 100px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    color: white;
+}
+
+.App-logo{
+    margin-bottom: 25px;
+}
+
+tr:nth-child(even){
+    background-color: #eaeaea;
+}
+
+.table tr th:nth-child(1){
+    width: 5%;
+    text-align: center;
+}
+
+.table tr th:nth-child(2){
+    padding-left: 40px;
+}
+
+.table tr th:nth-child(3){
+    width: 5%;
+    text-align: center;
+}
+
+td:nth-child(odd){
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+tbody > tr {
+    background-color: white;
+}
+
+.scorer td {
+    position: relative;
+}
+
+.scorer td:nth-child(2):after, .scorer td:nth-child(3):after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1px;
+    top: 8px;
+    bottom: 8px;
+    left: -5px;
+    background: #d3d3d3;
+}
+
+.scorer td:nth-child(2) {
+    padding-left: 40px;
+    font-size: 16px;
 }
